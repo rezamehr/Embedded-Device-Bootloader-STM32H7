@@ -21,8 +21,6 @@
 #include "usart.h"
 #include "gpio.h"
 #include "string.h"
-#include "crc32.h"
-#include "aes.h"
 #include "queue.h"
 #include "semphr.h"
 #include "frame_protocol.h"
@@ -49,10 +47,6 @@ uint8_t tx_buffer[TX_BUF_SIZE];
 //    uint8_t Databuffer[RX_BUF_SIZE];
 //};
 
-// AES context
-struct AES_ctx ctx;
-uint8_t key[16] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
-uint8_t iv[16] = {21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36};
 
 // RTOS objects
 QueueHandle_t xQueueDMA;
