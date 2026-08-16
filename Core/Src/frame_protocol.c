@@ -12,8 +12,6 @@
 #include "main.h"
 #include "usart.h"
 #include "string.h"
-#include "crc32.h"
-#include "aes.h"
 #include "FreeRTOS.h"
 #include "task.h"
 
