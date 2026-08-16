@@ -62,6 +62,12 @@ textSupported commands:
 Full protocol specification:  
 ➡️ [EDCC Bootloader Protocol v1.0](https://github.com/rezamehr/Embedded-Device-Control-Center/blob/main/docs/bootloader_protocol.md)
 
+## Related Projects
+
+- **Desktop Application:**  
+  [Embedded Device Control Center (EDCC)](https://github.com/rezamehr/Embedded-Device-Control-Center)  
+  Professional tool for discovering, managing, monitoring and updating embedded devices.
+  
 ---
 
 ## Project Structure
