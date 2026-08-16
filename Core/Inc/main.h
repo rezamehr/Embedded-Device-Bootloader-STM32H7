@@ -54,8 +54,7 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 void UART_IDleCallBack(UART_HandleTypeDef* huart);
-#define BOOTLOADER 1
-#define BKP_BASE_ADRR 0x38800000UL
+
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
