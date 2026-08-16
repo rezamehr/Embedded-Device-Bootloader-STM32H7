@@ -71,7 +71,7 @@ void SendResponse(uint8_t *payload, uint8_t payload_len) {
     // CHECKSUM (XOR PAYLOAD)
     frame[idx++] = CalculateXorChecksum(payload, payload_len);
 
-    // ارسال فریم کامل
+  // send Full frame 
     Uart_Transmit_DMA(&huart6, frame, idx, pdMS_TO_TICKS(1000));
 }
 
@@ -204,7 +204,7 @@ void ReceiveRX(struct rxINFO *pData) {
 static void ProcessIdentity(const FrameRx_t *pFrame) {
     (void)pFrame; // Unused parameter
 
-    // PAYLOAD: 12 bytes مطابق داکیومنت
+    // PAYLOAD: 12 bytes  
     uint8_t response[12] = {
         CMD_ACK,                    // [0] = 0xFF
         0x50, 0x04,                 // [1..2] Device ID = 0x0450 (LE)
