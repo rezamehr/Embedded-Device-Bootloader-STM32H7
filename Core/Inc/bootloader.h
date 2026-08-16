@@ -60,33 +60,33 @@ typedef struct {
   * @param  ctx: Pointer to bootloader context
   * @retval true if successful, false on error
   */
-bool Bootloader_Init(BootloaderContext_t *ctx);
+//bool Bootloader_Init(BootloaderContext_t *ctx);
 
 /**
   * @brief  Check if application is valid and jump to it
   * @param  ctx: Pointer to bootloader context
   * @retval true if jumped, false if invalid application
   */
-bool Bootloader_CheckAndJumpToApp(BootloaderContext_t *ctx);
+//bool Bootloader_CheckAndJumpToApp(BootloaderContext_t *ctx);
 
 /**
   * @brief  Get bootloader version string
   * @retval Pointer to version string
   */
-const char* Bootloader_GetVersionString(void);
+//const char* Bootloader_GetVersionString(void);
 
 /**
   * @brief  Get last error status
   * @param  ctx: Pointer to bootloader context
   * @retval Last error status
   */
-BootStatus_t Bootloader_GetLastError(const BootloaderContext_t *ctx);
+//BootStatus_t Bootloader_GetLastError(const BootloaderContext_t *ctx);
 
 /**
   * @brief  Reset bootloader error status
   * @param  ctx: Pointer to bootloader context
   */
-void Bootloader_ClearError(BootloaderContext_t *ctx);
+//void Bootloader_ClearError(BootloaderContext_t *ctx);
 
 void ReceiveRX(struct rxINFO *pData);
 uint8_t Uart_Transmit_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, TickType_t timeout);
