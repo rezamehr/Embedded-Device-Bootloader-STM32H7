@@ -19,9 +19,7 @@
    External Variables and Functions
    ============================================================================ */
 extern UART_HandleTypeDef huart6;
-extern struct AES_ctx ctx;
-extern uint8_t key[16];
-extern uint8_t iv[16];
+
 
 // Forward declaration of Uart_Transmit_DMA (defined in freertos.c)
 extern uint8_t Uart_Transmit_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, TickType_t timeout);
