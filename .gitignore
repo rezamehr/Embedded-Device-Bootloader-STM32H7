@@ -1,55 +1,67 @@
-# Prerequisites
-*.d
+# ============================================================
+# STM32 / CubeIDE / GCC
+# ============================================================
 
-# Object files
+# Build folders
+Debug/
+Release/
+build/
+*/Debug/
+*/Release/
+**/Debug/**
+**/Release/**
+
+# Object files & binaries
 *.o
-*.ko
 *.obj
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.bin
 *.hex
-
-# Debug files
-*.dSYM/
+*.map
+*.list
 *.su
-*.idb
-*.pdb
+*.d
+*.o.d
+*.elf.d
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# CubeIDE / Eclipse
+.settings/
+.metadata/
+.idea/
+*.launch
+*.project
+*.cproject
+*.mxproject
+.mxproject
 
-# debug information files
-*.dwo
+# STM32CubeMX generated (optional - keep if you want)
+# Drivers/
+# Middlewares/
+
+# FreeRTOS generated (if any)
+# Middlewares/Third_Party/FreeRTOS/
+
+# Temporary / Backup
+*.bak
+*.tmp
+*~
+*.swp
+*.swo
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE specific
+.vscode/
+*.code-workspace
+.clangd/
+compile_commands.json
+
+# Python / scripts
+__pycache__/
+*.pyc
+
+# Logs
+*.log
